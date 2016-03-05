@@ -1,5 +1,5 @@
 #include "stdafx.h"
-#include <winsock2.h>
+#include <winsock2.h> 
 #include <Ws2tcpip.h>
 #include <windows.h>
 #include "app.h"
@@ -11,7 +11,10 @@
 
 #define _WINSOCK_DEPRECATED_NO_WARNINGS
 
-// Необходимо, чтобы линковка происходила с DLL-библиотекой 
+// Необходимо, чтобы линковка происходила с DLL-библиотекой
+//компоновщик (также редактор связей или ли́нкер)
+// — это инструментальная программа, которая производит компоновку («линковку»)
+// принимает на вход один или несколько объектных модулей и собирает по ним исполнимый модуль.
 #pragma comment (lib, "ws2_32.lib") 
 #pragma comment (lib, "mswsock.lib")
 
